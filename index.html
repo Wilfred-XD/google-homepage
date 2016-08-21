@@ -1,19 +1,71 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title> Google Homepage</title>
-<link rel="stylesheet" type="text/CSS" href="google-styles.css"/>
+    <title>Google Homepage</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
+
 <body>
-  <img alt="google" src="https://www.google.com.sg/logos/doodles/2016/2016-doodle-fruit-games-day-14-5645577527230464-hp.gif"/>
-  <form>
-    <input type="text" name="search"></input>
-    <input type="button" name="Google Search" value="Google Search">Google Search</input>
-    <input type="button" name="I'm Feeling Lucky" value="I'm Feeling Lucky">I'm Feeling Lucky</input>
-  </form>
-  <ul>
-    <li>Gmail</li>
-    <li>Images</li>
-  </ul>
+    <div id="container">
+        <div id="topbar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <!--border-radius: 100% transforms borders into circles-->
+                        <img src="./images/blueperson.jpg" style="border-radius: 100%" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/u/0/notifications/all?hl=en">
+                        <img src="./images/notification.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.google.com/intl/en/aboout/products/">
+                        <img src="./images/apps.png" />
+                    </a>
+                </li>
+                <li><a href="https://images.google.com/">Images</a></li>
+                <li><a href="https://mail.google.com/">Gmail</a></li>
+            </ul>
+        </div>
+        <img style="" id="logo" alt="google" src="./images/google-logo.png" />
+        <div id="searchbar">
+            <form action="#" method="get">
+                <input name="search" type="search"></input>
+            </form>
+        </div>
+        <div id="search-options">
+            <div class="button">Google Search</div>
+            <div class="button">I'm Feeling Lucky</div>
+        </div>
+        <!-- This tanslates the homepage to different languages -->
+        <div id="languages">
+          <p>Google.com.sg offered in:
+            <span lang="zh-Hans"><a href="https://www.google.com.sg/setprefs?sig=0_MVvFF6P7hiq2LcdXE6wYb8hdQR8%3D&hl=zh-CN&source=homepage"> 中文(简体)</a></span>
+            <span lang="ms"><a href="https://www.google.com.sg/setprefs?sig=0_MVvFF6P7hiq2LcdXE6wYb8hdQR8%3D&hl=ms&source=homepage"> Bahasa Melayu</a></span>
+            <span lang="ta"><a href="https://www.google.com.sg/setprefs?sig=0_MVvFF6P7hiq2LcdXE6wYb8hdQR8%3D&hl=ta&source=homepage"> தமிழ்</a></span>
+          </p>
+        </div>
+        <div id="bottombar">
+            <ul id="bottomright">
+                <li><a href="https://www.google.com/preferences">Settings</a></li>
+                <li>
+                    <a href="https://www.google.com.sg/intl/en/policies/terms/regional.html">
+                  Terms
+                </a>
+                </li>
+                <li><a href="https://www.google.com/intl/en/policies/">Privacy</a></li>
+            </ul>
+            <ul id="bottomleft">
+                <li><a href="https://www.google.com/intl/en/about/">About</a></li>
+                <li><a href="https://www.google.com/services/">Business</a></li>
+                <li><a href="https://www.google.com/intl/en/ads/">Advertising</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
-</html>﻿
+
+</html>
