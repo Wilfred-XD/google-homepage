@@ -1,3 +1,8 @@
+::-webkit-input-placeholder  { color:#c9c9c9; font-size: 0.73em;} /* Webkit */
+:-moz-placeholder { color:#c9c9c9; font-size: 0.73em;}  /* Firefox <= 18 */
+::-moz-placeholder { color:#c9c9c9; font-size: 0.73em;}  /* Firefox >= 19 */
+:-ms-input-placeholder {  color: #c9c9c9; font-size: 0.73em;} /* Internet Explorer */
+
 body {
     margin: 0 auto;
     padding: 0;
@@ -42,13 +47,17 @@ a:link, a:visited {
   display: block;
   clear: both;
 }
+#searchbar {
+      margin: auto;
+}
 #searchbar input {
-    height: 40px;
-    width: 35em;
+    width: 25em;
     margin: auto;
-    padding-top: 15px;
+    padding: 4px 8px 4px 8px;
     border: 1px solid #d5d5d5;
-    display: block;
+    display: inline-block;
+    font-size: 1.35em;
+    vertical-align: middle;
 }
 #search-options {
     margin-top: 10px;
